@@ -1,0 +1,99 @@
+// Obnulenie, -Obshie parametr
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: $minwidth;
+  position: relative;
+  width: 100%;
+  color: #2b2b2b;
+  background: #f0f0f0;
+}
+body {
+  font-size: 14px;
+  line-height: 1;
+  font-family: $fontfamily;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.page {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // @include flexbox();
+  // flex-direction: column;
+}
+._ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  img {
+    display: none;
+  }
+}
+
+.btn {
+  color: #fff;
+  background: #eeb7bd;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 0 29px 0 29px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  transition: background 0.3s ease;
+  @include anim(0.3s, 0s);
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    // background: $color1;
+  }
+}
+
+input[type="number"] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+._title{
+  color: #010101;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 22px;  
+  font-weight: 600;  
+}
